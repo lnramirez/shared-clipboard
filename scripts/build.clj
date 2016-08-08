@@ -3,11 +3,10 @@
 (println "Building ...")
 
 (let [start (System/nanoTime)]
-  (b/build "src"
+  (b/build "src/cljs"
     {:main 'shared-clipboard.core
-     :output-to "out/shared_clipboard.js"
-     :output-dir "out"
+     :output-to "resources/public/js/shared_clipboard.js"
+     :output-dir "resources/public/js/out"
+     :asset-path "js/out"
      :verbose true})
   (println "... done. Elapsed" (/ (- (System/nanoTime) start) 1e9) "seconds"))
-
-

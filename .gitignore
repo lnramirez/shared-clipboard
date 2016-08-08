@@ -5,6 +5,8 @@ pom.xml
 /out/
 /release/
 /target/
+/node_modules/
+/resources/public/js/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
